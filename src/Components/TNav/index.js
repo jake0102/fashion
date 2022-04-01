@@ -6,7 +6,7 @@ function TNav() {
     return (
         <div className="TNav">
             <div className="TNav-search">
-                <FontAwesomeIcon icon={faQuestion} style={{marginLeft: '2rem', fontSize: '20px'}}/>
+                <FontAwesomeIcon icon={faQuestion} style={{fontSize: '20px'}}/>
                 <input type="text" placeholder="Search..."/>
             </div>
 
