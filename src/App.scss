@@ -124,6 +124,7 @@ body{
 .Products-left-top{
     width: 100%;
     height: 50%;
+    margin: 0 0.25rem 0.25rem 0;
 }
 .Products-left-bot{
     width: 100%;
@@ -145,6 +146,24 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Products-left-top-item1{
     width: 100%;
     height: 50%;
@@ -157,19 +176,6 @@ body{
     border-radius: 20px;
     border: 1px solid black;
 }
-.Products-right-bot-item1{
-    width: 100%;
-    height: 50%;
-    border-radius: 20px;
-    border: 1px solid black;
-}
-.Products-right-bot-item2{
-    width: 100%;
-    height: 50%;
-    border-radius: 20px;
-    border: 1px solid black;
-}
-
 
 .Products-left-bot-item1{
     height: 100%;
@@ -183,6 +189,20 @@ body{
     border-radius: 20px;
     border: 1px solid red;
 }
+
+.Products-right-bot-item1{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.Products-right-bot-item2{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
 .Products-right-top-item1{
     height: 100%;
     width: 50%;
