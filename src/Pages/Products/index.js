@@ -1,66 +1,11 @@
+import Left from './left'
+import Right from './right'
+
 function Products() {
     return (
         <div className="Products">
-            <div className="Products-left">
-                <div className="Products-left-top">
-                    
-                    <div className="Products-left-top-item1">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-
-                    <div className="Products-left-top-item2">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="Products-left-bot">
-                    <div className="Products-left-bot-item1">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-
-                    <div className="Products-left-bot-item2">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="Products-right">
-                <div className="Products-right-top">
-                    <div className="Products-right-top-item1">   
-                        <div className="item-container">
-                            </div> 
-                    </div>
-
-                    <div className="Products-right-top-item2">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div className="Products-right-bot">
-                    <div className="Products-right-bot-item1">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-
-                    <div className="Products-right-bot-item2">   
-                        <div className="item-container">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Left />
+            <Right />
         </div>
     )
 }
