@@ -15,13 +15,14 @@ body{
 .TNav{
     position: fixed;
     top: 0;
-    left: calc(350px - .5rem);
+    left: calc(320px - .5rem);
     height: calc(120px - .5rem);
-    width: calc(100% - 350px);
+    width: calc(100% - 320px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
+    // border: 1px solid black;
 }
 .TNav-search{
     &:hover input{
@@ -68,8 +69,9 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: calc(350px - .5rem);
+    height: calc(100vh - .5rem);
+    width: calc(320px - .5rem);
+    // border: 1px solid blue;
 }
 .LNav-container{
     margin: 0 0 0 3rem;
@@ -103,9 +105,10 @@ body{
 .MainContainer{
     position: fixed;
     top: calc(120px - .5rem);
-    left: calc(350px - .5rem);
-    width: calc(100% - 350px);
+    left: calc(320px - .5rem);
+    width: calc(100% - 320px);
     height: calc(100% - 120px);
+    // border: 1px solid red;
 }
 
 // Product Page Style
