@@ -10,7 +10,7 @@ function TNav() {
             </div>
 
             <div className="TNav-search">
-                <FontAwesomeIcon icon={faQuestion} style={{fontSize: '20px'}}/>
+                <FontAwesomeIcon icon={faQuestion} />
                 <input type="text" placeholder="Search..."/>
             </div>
 

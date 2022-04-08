@@ -4,6 +4,7 @@
 import './App.scss'
 import LNav from './Components/LNav'
 import TNav from './Components/TNav'
+import MNav from './Components/MNav'
 import MainContainer from './Components/MainContainer'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <LNav />
       <TNav />
+      <MNav />
       <MainContainer />
     </>
   )
