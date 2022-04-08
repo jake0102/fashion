@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestion, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faBars, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
 
 function TNav() {
     return (
         <div className="TNav">
             <div className="TNav-container-logo">
-                Y-Fas
+                Yashion
             </div>
 
             <div className="TNav-search">
                 <FontAwesomeIcon icon={faQuestion} />
-                <input type="text" placeholder="Search..."/>
+                <input type="text" placeholder="Search..." spellCheck={false}/>
             </div>
 
             <div className="TNav-nav">
                 <div className="TNav-nav-bar">
-                    <FontAwesomeIcon icon={faBars} style={{fontSize: '22px', marginRight: '1rem', color: 'black', cursor: 'pointer', fontWeight: '300'}} />
+                    <FontAwesomeIcon icon={faBars} />
                 </div>
 
                 <div className="TNav-nav-item">
@@ -24,19 +24,19 @@ function TNav() {
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/about">About us</Link>
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/cart">
+                        <FontAwesomeIcon icon={faShoppingCart} />
+                    </Link>
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/about">About</Link>
-                </div>
-
-                <div className="TNav-nav-item">
-                    <Link to="/register">Register</Link>
+                    <Link to="/login">
+                        <FontAwesomeIcon icon={faUser} />
+                    </Link>
                 </div>
             </div>
         </div>

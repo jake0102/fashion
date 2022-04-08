@@ -5,6 +5,7 @@ import accessories from '../img/accessories.png'
 import activewear from '../img/activewear.png'
 import gift from '../img/gift.png'
 import ring from '../img/ring.png'
+import problem from '../img/problem.png'
 
 import Item from './Item'
 
@@ -13,7 +14,7 @@ function LNav() {
         <div className="LNav">
             <div className="LNav-container">
                 <div className="LNav-container-logo">
-                    Y-Fas
+                    Yashion
                 </div>
 
                 <div className="LNav-container-title">
@@ -29,11 +30,15 @@ function LNav() {
 
                     <Item myImg={accessories} myTitle="Accessories"/>
 
-                    <Item myImg={activewear} myTitle="Activewear"/>
+                    <Item myImg={activewear} myTitle="Active wear"/>
 
                     <Item myImg={gift} myTitle="Gifts & Living"/>
 
                     <Item myImg={ring} myTitle="Inspiration"/>
+                </div>
+
+                <div className="LNav-container-contact">
+                    <Item myImg={problem} myTitle="Help center"/>
                 </div>
             </div>
         </div>
