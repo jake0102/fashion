@@ -1,4 +1,4 @@
-import QSwiper from '../Swiper'
+import QSwiper from '../QSwiper'
 
 
 function MNav() {
