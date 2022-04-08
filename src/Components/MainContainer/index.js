@@ -2,14 +2,12 @@
 import { Routes, Route } from 'react-router-dom'
 
 // Files
-import Products from '../../Pages/Products'
+import P_Home from '../P_Home'
 
 function MainContainer() {
     return (
         <div className="MainContainer">
-            <Routes>
-                <Route path="/" element={<Products />}/>
-            </Routes>
+            <P_Home />
         </div>
     )
 }

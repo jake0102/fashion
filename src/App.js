@@ -1,20 +1,17 @@
 // React methods
+import { Routes, Route } from 'react-router-dom'
 
 // Files
 import './App.scss'
-import LNav from './Components/LNav'
-import TNav from './Components/TNav'
-import MNav from './Components/MNav'
-import MainContainer from './Components/MainContainer'
+import Product from './Pages/Product'
+import About from './Pages/About'
 
 function App() {
   return (
-    <>
-      <LNav />
-      <TNav />
-      <MNav />
-      <MainContainer />
-    </>
+    <Routes>
+      <Route path="/" element={<Product />}/>
+      <Route path="/about" element={<About />}/>
+    </Routes>
   )
 }
 
