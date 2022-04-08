@@ -5,6 +5,10 @@ import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 function TNav() {
     return (
         <div className="TNav">
+            <div className="TNav-container-logo">
+                Y-Fas
+            </div>
+
             <div className="TNav-search">
                 <FontAwesomeIcon icon={faQuestion} style={{fontSize: '20px'}}/>
                 <input type="text" placeholder="Search..."/>

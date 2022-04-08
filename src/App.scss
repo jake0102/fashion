@@ -22,9 +22,17 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
+    animation: opa01 alternate forwards 5s;
+}
+.TNav-container-logo{
+    display: none;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 40px;
+    color: rgb(255, 134, 154);
+    letter-spacing: 10px;
+    margin: 3rem 0 3rem 0;
 }
 .TNav-search{
-
     margin: 0 0 0 .5rem;
 
     &:hover input{
@@ -73,6 +81,7 @@ body{
     left: 0;
     height: calc(100vh - .5rem);
     width: calc(320px - .5rem);
+    animation: opa01 alternate forwards 5s;
 }
 .LNav-container{
     margin: 0 0 0 3rem;
@@ -80,7 +89,7 @@ body{
 .LNav-container-logo{
     font-family: 'Bungee Shade', cursive;
     font-size: 40px;
-    color: rgb(255, 167, 182);
+    color: rgb(255, 134, 154);
     letter-spacing: 10px;
     margin: 3rem 0 3rem 0;
 }
@@ -129,11 +138,13 @@ body{
 .Products-left-top{
     width: 100%;
     height: 50%;
+    animation: fromTop alternate forwards 1.5s;
 }
 .Products-left-bot{
     width: 100%;
     height: 50%;
     display: flex;
+    animation: fromLeft alternate forwards 1.5s;
 }
 .Products-right{
     width: 50%;
@@ -143,10 +154,12 @@ body{
     width: 100%;
     height: 50%;
     display: flex;
+    animation: fromRight alternate forwards 1.5s;
 }
 .Products-right-bot{
     width: 100%;
     height: 50%;
+    animation: fromBot alternate forwards 1.5s;
 }
 .Products-left-top-item1{
     height: 50%;
@@ -400,4 +413,50 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+// Ani
+@keyframes fromTop {
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes fromBot {
+    from{
+        transform: translateY(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes fromLeft {
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes fromRight {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes opa01 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+// Responsive
+@media screen and (max-width: 1250px) {
+    
 }
