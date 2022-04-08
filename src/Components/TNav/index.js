@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faBars } from '@fortawesome/free-solid-svg-icons'
 
 function TNav() {
     return (
@@ -15,6 +15,10 @@ function TNav() {
             </div>
 
             <div className="TNav-nav">
+                <div className="TNav-nav-bar">
+                    <FontAwesomeIcon icon={faBars} style={{fontSize: '22px', marginRight: '1rem', color: 'black', cursor: 'pointer', fontWeight: '300'}} />
+                </div>
+
                 <div className="TNav-nav-item">
                     <Link to="/">Products</Link>
                 </div>

@@ -25,12 +25,24 @@ body{
     animation: opa01 alternate forwards 5s;
 }
 .TNav-container-logo{
-    display: none;
+    display: none !important;
     font-family: 'Bungee Shade', cursive;
     font-size: 40px;
     color: rgb(255, 134, 154);
     letter-spacing: 10px;
-    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TNav-nav-bar{
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
 }
 .TNav-search{
     margin: 0 0 0 .5rem;
@@ -458,5 +470,27 @@ body{
 }
 // Responsive
 @media screen and (max-width: 1250px) {
-    
+    .LNav{
+        display: none;
+    }
+    .TNav{
+        left: .5rem;
+        width: calc(100% - 1rem);
+    }
+    .TNav-search{
+        display: none;
+    }
+    .TNav-container-logo{
+        display: block !important;
+    }
+    .TNav-nav-item{
+        display: none;
+    }
+    .TNav-nav-bar{
+        display: block;
+    }
+    .MainContainer{
+        left: 0;
+        width: 100%;
+    }
 }
