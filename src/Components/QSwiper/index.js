@@ -26,7 +26,7 @@ export default function QSwiper() {
     <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={0}
         slidesPerGroup={3}
         loop={true}
         loopFillGroupWithBlank={true}

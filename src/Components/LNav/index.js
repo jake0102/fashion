@@ -1,10 +1,12 @@
-import thunder from './thunder.png'
-import clothing from './clothing.png'
-import shoes from './shoes.png'
-import accessories from './accessories.png'
-import activewear from './activewear.png'
-import gift from './gift.png'
-import ring from './ring.png'
+import thunder from '../img/thunder.png'
+import clothing from '../img/clothing.png'
+import shoes from '../img/shoes.png'
+import accessories from '../img/accessories.png'
+import activewear from '../img/activewear.png'
+import gift from '../img/gift.png'
+import ring from '../img/ring.png'
+
+import Item from './Item'
 
 function LNav() {
     return (
@@ -19,40 +21,19 @@ function LNav() {
                 </div>
 
                 <div className="LNav-container-nav">
-                    <div className="LNav-container-nav-item">
-                        <img src={thunder}/>
-                        <span>New In</span>
-                    </div>
+                    <Item myImg={thunder} myTitle="New In"/>
 
-                    <div className="LNav-container-nav-item">
-                        <img src={clothing}/>
-                        <span>Clothing</span>
-                    </div>
+                    <Item myImg={clothing} myTitle="Clothing"/>
 
-                    <div className="LNav-container-nav-item">
-                        <img src={shoes}/>
-                        <span>Shoes</span>
-                    </div>
+                    <Item myImg={shoes} myTitle="Shoes"/>
 
-                    <div className="LNav-container-nav-item">
-                        <img src={accessories}/>
-                        <span>Accessories</span>
-                    </div>
+                    <Item myImg={accessories} myTitle="Accessories"/>
 
-                    <div className="LNav-container-nav-item">
-                        <img src={activewear}/>
-                        <span>Activewear</span>
-                    </div>
+                    <Item myImg={activewear} myTitle="Activewear"/>
 
-                    <div className="LNav-container-nav-item">
-                        <img src={gift}/>
-                        <span>Gifts & Living</span>
-                    </div>
+                    <Item myImg={gift} myTitle="Gifts & Living"/>
 
-                    <div className="LNav-container-nav-item">
-                        <img src={ring}/>
-                        <span>Inspiration</span>
-                    </div>
+                    <Item myImg={ring} myTitle="Inspiration"/>
                 </div>
             </div>
         </div>

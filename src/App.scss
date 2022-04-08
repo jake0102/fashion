@@ -23,12 +23,14 @@ body{
     align-items: center;
     font-size: 16px;
     animation: opa01 alternate forwards 5s;
+    z-index: 100;
+    background: white;
 }
 .TNav-container-logo{
     display: none !important;
     font-family: 'Bungee Shade', cursive;
     font-size: 40px;
-    color: rgb(255, 134, 154);
+    color: rgb(253, 109, 133);
     letter-spacing: 10px;
     display: flex;
     justify-content: center;
@@ -109,7 +111,7 @@ body{
 .LNav-container-logo{
     font-family: 'Bungee Shade', cursive;
     font-size: 40px;
-    color: rgb(255, 134, 154);
+    color: rgb(253, 109, 133);
     letter-spacing: 10px;
     margin: 3rem 0 3rem 0;
 }
@@ -139,13 +141,16 @@ body{
 // MNav
 .MNav{
     position: fixed;
-    top: calc(120px - .5rem);
+    top: calc(80px - .5rem);
     left: .5rem;
     width: calc(100% - 1rem);
     height: 50px;
     background: white;
     display: none;
+    box-shadow: 3px 3px 7px rgb(190, 190, 190, 0.7);
+    border-radius: 100rem;
     z-index: 99;
+    animation: opa01 alternate forwards 5s;
 }
 
 // MainContainer Style
@@ -447,6 +452,44 @@ body{
     justify-content: center;
 }
 
+// Swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 100rem;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    img{
+        width: 20px;
+        margin-right: 1rem;
+    }
+
+    &:hover{
+        cursor: pointer;
+        background: rgb(210, 210, 210, 0.2);
+    }
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 12px !important;
+}
+
 // Ani
 @keyframes fromTop {
     from{
@@ -496,12 +539,14 @@ body{
     .TNav{
         left: .5rem;
         width: calc(100% - 1rem);
+        height: calc(80px - 0.5rem);
     }
     .TNav-search{
         display: none;
     }
     .TNav-container-logo{
         display: block !important;
+        font-size: 35px;
     }
     .TNav-nav-item{
         display: none;
@@ -513,54 +558,41 @@ body{
         left: 0;
         width: 100%;
         position: absolute;
-        top: calc(170px - .5rem);
+        top: calc(150px - .5rem);
     }
     .MNav{
         display: flex;
     }
-}
-@media screen and (max-width: 767px) {
-    
-}
-
-
-
-
-
-
-
-
-
-
-// Swiper
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-
-    img{
-        width: 20px;
-        margin-right: 1rem;
+    .item-container-title{
+        transform: translate(20%, -50%);
     }
 }
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 12px !important;
-    opacity: .3;
+@media screen and (max-width: 900px) {
+    .item-container-title{
+        transform: translate(10%, -30%);
+    }
+}
+@media screen and (max-width: 767px) {
+    .Products{
+        display: block;
+    }
+    .Products-left{
+        width: 100%;
+    }
+    .Products-right{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 565px) {
+    .swiper-slide {
+        font-size: 14px;
+
+        img{
+            width: 16px;
+            margin-right: .5rem;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
 }
