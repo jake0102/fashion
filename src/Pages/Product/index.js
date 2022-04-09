@@ -1,5 +1,5 @@
 // React methods
-import { createContext } from 'react'
+import { createContext, useState } from 'react'
 
 // Files
 import LNav from '../../Components/LNav'
@@ -11,17 +11,22 @@ import MainContainer from '../../Components/MainContainer'
 // Function
 export const FuncContext = createContext()
 
-const value = 'acv..'
-
 function Product() {
+
+    const [show, setshow] = useState(false)
+
+    const handleShow = function(){
+        setshow(!show)
+    }
+
     return (
         <>
-            <FuncContext.Provider value={value}>
+            <FuncContext.Provider value={handleShow}>
                 <LNav />
                 <TNav />
                 <MainContainer />
                 <MNav />
-                <MModal />
+                <MModal show={show}/>
             </FuncContext.Provider>
         </>
     )

@@ -10,9 +10,7 @@ import { FuncContext } from '../../Pages/Product'
 // Func
 
 function TNav() {
-    const value = useContext(FuncContext)
-
-    console.log(value);
+    const handleShow = useContext(FuncContext)
 
     return (
         <div className="TNav">
@@ -26,7 +24,7 @@ function TNav() {
             </div>
 
             <div className="TNav-nav">
-                <div className="TNav-nav-bar">
+                <div className="TNav-nav-bar" onClick={() => handleShow()}>
                     <FontAwesomeIcon icon={faBars} />
                 </div>
 

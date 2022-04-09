@@ -1,6 +1,11 @@
-function MModal() {
+function MModal(props) {
+
+    let s
+
+    props.show === false ? s = 'none' : s = 'block' 
+
     return (
-        <div className="MModal">
+        <div className="MModal" style={{display: `${s}`}}>
 
         </div>
     )
