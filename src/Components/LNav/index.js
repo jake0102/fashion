@@ -36,10 +36,6 @@ function LNav() {
 
                     <Item myImg={ring} myTitle="Inspiration"/>
                 </div>
-
-                <div className="LNav-container-contact">
-                    <Item myImg={problem} myTitle="Help center"/>
-                </div>
             </div>
         </div>
     )

@@ -1,8 +1,19 @@
+// React methods
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestion, faBars, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
 
+// Files
+import { FuncContext } from '../../Pages/Product'
+
+// Func
+
 function TNav() {
+    const value = useContext(FuncContext)
+
+    console.log(value);
+
     return (
         <div className="TNav">
             <div className="TNav-container-logo">
@@ -21,6 +32,10 @@ function TNav() {
 
                 <div className="TNav-nav-item">
                     <Link to="/">Products</Link>
+                </div>
+
+                <div className="TNav-nav-item">
+                    <Link to="/contact">Contact</Link>
                 </div>
 
                 <div className="TNav-nav-item">
