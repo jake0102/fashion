@@ -3,21 +3,19 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestion, faBars, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
-import clsx from 'clsx'
 
 // Files
 import { FuncContext } from '../../Pages/Product'
-import styles from '../../App.scss'
 
 // Func
 
 function TNav() {
 
-    const classes = clsx({
-        [styles.scale8Animation]: true
-    })
+    const values = useContext(FuncContext)
 
-    const handleShow = useContext(FuncContext)
+    let ani
+
+    values.scaleAni === true ? ani = 'scale8Animation' : ani = ''
 
     return (
         <div className="TNav">
@@ -31,9 +29,9 @@ function TNav() {
             </div>
 
             <div className="TNav-nav">
-                <div className="TNav-nav-bar" onClick={() => handleShow()}>
+                <div className="TNav-nav-bar" onClick={() => values.handleShow()}>
                     <FontAwesomeIcon icon={faBars} />
-                    <div className={`MModal-nav-fake ${classes}`}></div>
+                    <div className={`MModal-nav-fake ${ani}`}></div>
                 </div>
 
 

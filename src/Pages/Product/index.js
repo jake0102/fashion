@@ -15,13 +15,21 @@ function Product() {
 
     const [show, setshow] = useState(false)
 
+    const [ani, setAni] = useState(false)
+
     const handleShow = function(){
         setshow(!show)
+        setAni(!ani)
+    }
+
+    const values = {
+        handleShow,
+        scaleAni: ani
     }
 
     return (
         <>
-            <FuncContext.Provider value={handleShow}>
+            <FuncContext.Provider value={values}>
                 <LNav />
                 <TNav />
                 <MainContainer />
