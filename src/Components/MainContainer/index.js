@@ -1,18 +1,30 @@
 // React methods
-import { Routes, Route } from 'react-router-dom'
+import { createContext } from 'react'
 
 // Files
 import P_Home from '../P_Home'
 import TShirt from '../TShirt'
 
+export const ContentsContext = createContext()
+
+const handleChangeContents = function(e){
+
+    let contentName = e.target.attributes[1].value
+
+    console.log(contentName);
+}
+
+const contents = {
+    handleChangeContents
+}
+
 function MainContainer() {
     return (
-        <div className="MainContainer">
-            <Routes>
-                <Route path="/" element={<P_Home />}/>
-                <Route path="/product/tshirt" element={<TShirt />}/>
-            </Routes>
-        </div>
+        <ContentsContext.Provider value={contents}>
+            <div className="MainContainer">
+                <P_Home />
+            </div>
+        </ContentsContext.Provider>
     )
 }
 
