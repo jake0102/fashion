@@ -55,24 +55,9 @@ body{
     &:hover{
         cursor: pointer;
         background-color: rgb(245, 245, 245);
-
-        &::after{
-            transform: scale(8500%);
-        }
-    }
-
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 50px;
-        width: 50px;
-        border-radius: 100rem;
-        background: rgb(245, 245, 245);
-        transition: all 3s ease;
     }
 }
+
 .TNav-search{
     margin: 0 0 0 .5rem;
 
@@ -175,6 +160,27 @@ body{
     border-radius: 100rem;
     z-index: 99;
     animation: opa01 alternate forwards 3s;
+}
+.MModal-nav-fake{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100rem;
+    background: rgb(245, 245, 245);
+    transition: all 3s ease;
+}
+.scale8Animation{
+    animation: scale8 alternate 3s;
+}
+@keyframes scale8 {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(8500%);
+    }
 }
 
 // MainContainer Style

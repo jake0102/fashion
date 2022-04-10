@@ -20,6 +20,14 @@ function MModal(props) {
                     <FontAwesomeIcon icon={faBars} />
                 </div>
             </div>
+
+            <div> 
+                <h2>Testing...</h2>
+                <h3>Testing...</h3>
+                <h4>Testing...</h4>
+                <h5>Testing...</h5>
+                <h6>Testing...</h6>
+            </div>
         </div>
     )
 }
