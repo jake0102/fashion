@@ -1,20 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 function left() {
     return (
         <div className="Products-left">
-            <div className="Products-left-top">
+            <div className="Products-left-top">   
                 <div className="Products-left-top-item1">   
                     <div className="item-container">
                         <div className="item-container-title">T - shirt</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/tshirt">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -22,12 +25,14 @@ function left() {
                     <div className="item-container">
                         <div className="item-container-title">Shoes</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/shoes">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -37,12 +42,14 @@ function left() {
                     <div className="item-container">
                         <div className="item-container-title">One piece</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/onepiece">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -50,12 +57,14 @@ function left() {
                     <div className="item-container">
                         <div className="item-container-title">Active wear</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/active">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

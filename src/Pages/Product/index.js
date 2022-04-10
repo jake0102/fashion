@@ -15,16 +15,16 @@ function Product() {
 
     const [show, setshow] = useState(false)
 
-    const [ani, setAni] = useState(false)
+    // const [ani, setAni] = useState(false)
 
     const handleShow = function(){
+        // setAni(!ani)
         setshow(!show)
-        setAni(!ani)
     }
 
     const values = {
         handleShow,
-        scaleAni: ani
+        // scaleAni: ani
     }
 
     return (

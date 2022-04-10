@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 function right() {
     return (
@@ -9,12 +10,14 @@ function right() {
                     <div className="item-container">
                         <div className="item-container-title">Autumn wear</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/autumn">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div> 
                 </div>
 
@@ -22,12 +25,14 @@ function right() {
                     <div className="item-container">
                         <div className="item-container-title">Summer wear</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/summer">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -37,12 +42,14 @@ function right() {
                     <div className="item-container">
                         <div className="item-container-title">Accessories</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/accessories">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -50,12 +57,14 @@ function right() {
                     <div className="item-container">
                         <div className="item-container-title">Sale shoes</div>
 
-                        <div className="item-container-hover">
-                            <div>
-                                <FontAwesomeIcon icon={faEye} />
-                                <span> See more</span>
+                        <Link to="/product/saleshoes">
+                            <div className="item-container-hover">
+                                <div>
+                                    <FontAwesomeIcon icon={faEye} />
+                                    <span> See more</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

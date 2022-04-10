@@ -57,6 +57,28 @@ body{
         background-color: rgb(245, 245, 245);
     }
 }
+// .TNav-nav-fake{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 50px;
+//     width: 50px;
+//     border-radius: 100rem;
+//     background: rgb(245, 245, 245, 0);
+//     transition: all 3s ease;
+// }
+// .scale8Animation{
+//     animation: scale8 alternate 1s;
+// }
+// @keyframes scale8 {
+//     from{
+//         transform: scale(0);
+//     }
+//     to{
+//         transform: scale(8500%);
+//         background: rgb(245, 245, 245, 1);
+//     }
+// }
 
 .TNav-search{
     margin: 0 0 0 .5rem;
@@ -160,27 +182,6 @@ body{
     border-radius: 100rem;
     z-index: 99;
     animation: opa01 alternate forwards 3s;
-}
-.MModal-nav-fake{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 50px;
-    border-radius: 100rem;
-    background: rgb(245, 245, 245);
-    transition: all 3s ease;
-}
-.scale8Animation{
-    animation: scale8 alternate 3s;
-}
-@keyframes scale8 {
-    from{
-        transform: scale(0);
-    }
-    to{
-        transform: scale(8500%);
-    }
 }
 
 // MainContainer Style
@@ -484,13 +485,13 @@ body{
 
 // MModal
 .MModal{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgb(245, 245, 245);
-    z-index: 99999;
+    z-index: 100;
 }
 .MModal-nav{
     width: 100%;

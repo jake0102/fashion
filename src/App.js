@@ -8,10 +8,11 @@ import About from './Pages/About'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Product />}/>
-      <Route path="/about" element={<About />}/>
-    </Routes>
+    // <Routes>
+    //   <Route path="/" element={<Product />}/>
+    //   <Route path="/about" element={<About />}/>
+    // </Routes>
+    <Product />
   )
 }
 

@@ -31,7 +31,7 @@ function TNav() {
             <div className="TNav-nav">
                 <div className="TNav-nav-bar" onClick={() => values.handleShow()}>
                     <FontAwesomeIcon icon={faBars} />
-                    <div className={`MModal-nav-fake ${ani}`}></div>
+                    {/* <div className={`TNav-nav-fake ${ani}`}></div> */}
                 </div>
 
 
