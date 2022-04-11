@@ -528,24 +528,160 @@ body{
 }
 .List-title{
     width: 100%;
+    height: 170px;
+    margin: 0 0 20px 0;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
 }
 .List-nav{
-    
+    font-weight: 400;
+    margin: 0 0 20px 0;
 }
 .List-nav-container{
-
+    display: flex;
 }
-.List-nav-container-wechoice{
+.List-nav-container-recommend{
+    margin: 0 3rem 0 0;
 
+    svg{
+        margin: 0 .5rem 0 0;
+        font-size: 18px;
+        color: rgb(210, 210, 210);
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
 }
-.List-nav-container-fil{
+.List-nav-container-sort{
     
-}
-.List-row{
+    svg{
+        margin: 0 .5rem 0 0;
+        font-size: 20px;
+        color: rgb(210, 210, 210);
+    }
 
+    &:hover{
+        cursor: pointer;
+    }
 }
-.List-cow{
+.List-container{
+    width: 100%;
+    height: 540px;
+    margin: 0 0 20px 0;
+    display: flex;
+}
+.List-container-main{
+    height: 100%;
+    width: 90%;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.List-container-main-item{
+    height: 100%;
+    width: 400px;
+    border-radius: 15px;
+    background: rgb(210, 210, 210);
+}
+.List-container-prev{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.List-container-next{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.List-container-prev-btn{
+    height: 55px;
+    width: 55px;
+    border-radius: 100rem;
+    background: rgb(210, 210, 210, 0.3);
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &:hover{
+        cursor: pointer;
+        color: black;
+        background: rgb(210, 210, 210, 0.5);
+    }
+}
+.List-container-next-btn{
+    height: 55px;
+    width: 55px;
+    border-radius: 100rem;
+    background: rgb(210, 210, 210, 0.3);
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+        color: black;
+        background: rgb(210, 210, 210, 0.5);
+    }
+}
+
+// Back To P_Home
+.btph{
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 143, 114), rgb(253, 109, 133));
+    position: relative;
+    overflow: hidden;
+    
+    svg{
+        color: white;
+        font-size: 18px;
+        transition: all .6s ease;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+    &:hover svg{
+        opacity: 0;
+    }
+    &:hover .btph-hover{
+        transform: translateX(0);
+    }
+}
+.btph-hover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 15px;
+    background: rgba(210, 210, 210, 0.2);
+    transform: translateX(100%);
+    transition: all .6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 // Swiper

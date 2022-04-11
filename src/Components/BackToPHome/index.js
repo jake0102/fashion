@@ -1,4 +1,6 @@
 import { useContext } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft  } from '@fortawesome/free-solid-svg-icons'
 
 import { ContentsContext } from '../MainContainer'
 
@@ -7,11 +9,16 @@ function BackToPHome() {
     const contents = useContext(ContentsContext)
 
     return (
-        <button 
+        <div 
+            className="btph"
             onClick={() => contents.handleChangeContents('back')}
         >
-            Back
-        </button>
+            <FontAwesomeIcon icon={faArrowLeft} />
+
+            <div className="btph-hover">
+                BACK
+            </div>
+        </div>
     )
 }
 
