@@ -47,6 +47,9 @@ function MainContainer() {
             case 'saleshoes':
                 setContent(<SaleShoes />)
                 break;
+            case 'back':
+                setContent(<P_Home />)
+                break;
             default:
                 console.warn('Please Check Again!');
                 break;
