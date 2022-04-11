@@ -1,8 +1,12 @@
+import List from '../List'
+import BackToPHome from '../BackToPHome'
+
 function Accessories() {
     return (
-        <div>
-            <h1>Accessories</h1>
-        </div>
+        <>
+            <List />
+            <BackToPHome />
+        </>
     )
 }
 

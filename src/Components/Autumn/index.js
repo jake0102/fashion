@@ -1,8 +1,12 @@
+import List from '../List'
+import BackToPHome from '../BackToPHome'
+
 function Autumn() {
     return (
-        <div>
-            <h1>Autumn</h1>
-        </div>
+        <>
+            <List />
+            <BackToPHome />
+        </>
     )
 }
 

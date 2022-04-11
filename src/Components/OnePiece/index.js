@@ -1,8 +1,12 @@
+import List from '../List'
+import BackToPHome from '../BackToPHome'
+
 function OnePiece() {
     return (
-        <div>
-            <h1>OnePiece</h1>
-        </div>
+        <>
+            <List />
+            <BackToPHome />
+        </>
     )
 }
 

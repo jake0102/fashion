@@ -1,8 +1,12 @@
+import List from '../List'
+import BackToPHome from '../BackToPHome'
+
 function SaleShoes() {
     return (
-        <div>
-            <h1>SaleShoes</h1>
-        </div>
+        <>
+            <List />
+            <BackToPHome />
+        </>
     )
 }
 
