@@ -41,7 +41,7 @@ function Left() {
                         <div className="item-container-title">Shoes</div>
 
                         {/* <Link to="/product/shoes"> */}
-                            <div className="item-container-hover">
+                            <div className="item-container-hover" content='shoes' onClick={(e) => contents.handleChangeContents(e)}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
@@ -58,7 +58,7 @@ function Left() {
                         <div className="item-container-title">One piece</div>
 
                         {/* <Link to="/product/onepiece"> */}
-                            <div className="item-container-hover">
+                            <div className="item-container-hover" content='onepiece' onClick={(e) => contents.handleChangeContents(e)}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
@@ -73,7 +73,7 @@ function Left() {
                         <div className="item-container-title">Active wear</div>
 
                         {/* <Link to="/product/active"> */}
-                            <div className="item-container-hover">
+                            <div className="item-container-hover" content='active' onClick={(e) => contents.handleChangeContents(e)}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
