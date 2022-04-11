@@ -7,11 +7,9 @@ import TShirt from '../TShirt'
 
 export const ContentsContext = createContext()
 
-const handleChangeContents = function(e){
+const handleChangeContents = function(value){
 
-    let contentName = e.target.attributes[1].value
-
-    console.log(contentName);
+    console.log(value);
 }
 
 const contents = {

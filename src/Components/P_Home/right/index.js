@@ -25,7 +25,7 @@ function Right() {
                         <div className="item-container-title">Autumn wear</div>
 
                         {/* <Link to="/product/autumn"> */}
-                            <div className="item-container-hover" content='autumn' onClick={(e) => contents.handleChangeContents(e)}>
+                            <div className="item-container-hover" onClick={() => contents.handleChangeContents('autumn')}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
@@ -40,7 +40,7 @@ function Right() {
                         <div className="item-container-title">Summer wear</div>
 
                         {/* <Link to="/product/summer"> */}
-                            <div className="item-container-hover" content='summer' onClick={(e) => contents.handleChangeContents(e)}>
+                            <div className="item-container-hover" onClick={() => contents.handleChangeContents('summer')}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
@@ -57,7 +57,7 @@ function Right() {
                         <div className="item-container-title">Accessories</div>
 
                         {/* <Link to="/product/accessories"> */}
-                            <div className="item-container-hover" content='accessories' onClick={(e) => contents.handleChangeContents(e)}>
+                            <div className="item-container-hover" onClick={() => contents.handleChangeContents('accessories')}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
@@ -72,7 +72,7 @@ function Right() {
                         <div className="item-container-title">Sale shoes</div>
 
                         {/* <Link to="/product/saleshoes"> */}
-                            <div className="item-container-hover" content='saleshoes' onClick={(e) => contents.handleChangeContents(e)}>
+                            <div className="item-container-hover" onClick={() => contents.handleChangeContents('saleshoes')}>
                                 <div>
                                     <FontAwesomeIcon icon={faEye} />
                                     <span> See more</span>
