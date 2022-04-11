@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faSort, faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
+import BackToPHome from '../BackToPHome'
+
 function List(props) {
     return (
         <div className="List">
@@ -51,6 +53,8 @@ function List(props) {
                     </div>
                 </div>
             </div>
+
+            <BackToPHome />
         </div>
     )
 }
