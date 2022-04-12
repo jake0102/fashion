@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    animation: opa01 alternate forwards 3s;
+    // animation: opa01 alternate forwards 3s;
     z-index: 100;
     background: white;
     font-family: 'Roboto', sans-serif;
@@ -133,7 +133,7 @@ body{
     left: 0;
     height: calc(100vh - .5rem);
     width: calc(320px - .5rem);
-    animation: opa01 alternate forwards 3s;
+    // animation: opa01 alternate forwards 3s;
 }
 .LNav-container{
     margin: 0 0 0 3rem;
@@ -181,7 +181,7 @@ body{
     box-shadow: 3px 3px 7px rgb(190, 190, 190, 0.7);
     border-radius: 100rem;
     z-index: 99;
-    animation: opa01 alternate forwards 3s;
+    // animation: opa01 alternate forwards 3s;
 }
 
 // MainContainer Style
@@ -206,13 +206,13 @@ body{
 .Products-left-top{
     width: 100%;
     height: 50%;
-    animation: fromTop alternate forwards 1.5s;
+    // animation: fromTop alternate forwards 1.5s;
 }
 .Products-left-bot{
     width: 100%;
     height: 50%;
     display: flex;
-    animation: fromLeft alternate forwards 1.5s;
+    // animation: fromLeft alternate forwards 1.5s;
 }
 .Products-right{
     width: 50%;
@@ -222,12 +222,12 @@ body{
     width: 100%;
     height: 50%;
     display: flex;
-    animation: fromRight alternate forwards 1.5s;
+    // animation: fromRight alternate forwards 1.5s;
 }
 .Products-right-bot{
     width: 100%;
     height: 50%;
-    animation: fromBot alternate forwards 1.5s;
+    // animation: fromBot alternate forwards 1.5s;
 }
 .Products-left-top-item1{
     height: 50%;

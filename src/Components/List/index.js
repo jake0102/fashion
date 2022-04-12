@@ -33,8 +33,8 @@ function List(props) {
                 </div>
 
                 <div className="List-container-main">
-                    <div className="List-container-main-item"></div>
-                    <div className="List-container-main-item"></div>
+                    {/* <div className="List-container-main-item"></div>
+                    <div className="List-container-main-item"></div> */}
                 </div>
 
                 <div className="List-container-next">
