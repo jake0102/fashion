@@ -34,6 +34,8 @@ function List(props) {
 
                 <div className="List-container-main">
                     {/* <div className="List-container-main-item"></div>
+                    <div className="List-container-main-item"></div>
+                    <div className="List-container-main-item"></div>
                     <div className="List-container-main-item"></div> */}
                 </div>
 
