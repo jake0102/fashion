@@ -6,18 +6,6 @@ import BackToPHome from '../BackToPHome'
 
 function List(props) {
 
-    const [itemNum, setItemNum] = useState(4)
-
-    const itemRef = useRef()
-
-    useEffect(()=>{
-        for (let index = 0; index < itemNum; index++) {
-            
-            // itemRef.current.innerHTML = <div className="List-container-main-item"></div>
-            
-        }
-    }, [itemNum])
-
     return (
         <div className="List">
             <div className="List-title">
@@ -46,7 +34,7 @@ function List(props) {
                 </div>
 
                 <div className="List-container-main" ref={itemRef}>
-                    
+                    <div className="List-container-main-item"></div>
                 </div>
 
                 <div className="List-container-next">
