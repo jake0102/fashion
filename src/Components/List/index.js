@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faSort, faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useRef, useState } from 'react'
 
 import BackToPHome from '../BackToPHome'
 
@@ -33,7 +32,8 @@ function List(props) {
                     </div>
                 </div>
 
-                <div className="List-container-main" ref={itemRef}>
+                <div className="List-container-main">
+                    <div className="List-container-main-item"></div>
                     <div className="List-container-main-item"></div>
                 </div>
 
