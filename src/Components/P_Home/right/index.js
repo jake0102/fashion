@@ -1,21 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useContext } from 'react'
+import { useContext } from 'react'
 // import { Link } from 'react-router-dom'
 
 // Files
-import { ContentsContext } from '../../MainContainer'
+import { ContentsContext } from '../../ContentsProvider'
 
 function Right() {
 
     const contents = useContext(ContentsContext)
-
-    useEffect(()=> {
-
-        // console.log(contents);
-
-        // Cleanup function
-    })
 
     return (
         <div className="Products-right">

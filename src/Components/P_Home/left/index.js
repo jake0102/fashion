@@ -5,7 +5,7 @@ import { useEffect, useContext } from 'react'
 // import { Link } from 'react-router-dom'
 
 // Files
-import { ContentsContext } from '../../MainContainer'
+import { ContentsContext } from '../../ContentsProvider'
 
 function Left() {
 

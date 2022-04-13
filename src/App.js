@@ -5,13 +5,16 @@ import { Routes, Route } from 'react-router-dom'
 import './App.scss'
 import Product from './Pages/Product'
 import About from './Pages/About'
+import { ContentsProvider } from './Components/ContentsProvider'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Product />}/>
-      <Route path="/about" element={<About />}/>
-    </Routes>
+    <ContentsProvider>
+      <Routes>
+        <Route path="/" element={<Product />}/>
+        <Route path="/about" element={<About />}/>
+      </Routes>
+    </ContentsProvider>
     // <Product />
   )
 }

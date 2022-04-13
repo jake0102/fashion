@@ -5,7 +5,6 @@ import accessories from '../img/accessories.png'
 import activewear from '../img/activewear.png'
 import gift from '../img/gift.png'
 import ring from '../img/ring.png'
-import problem from '../img/problem.png'
 
 import Item from './Item'
 
@@ -22,19 +21,19 @@ function LNav() {
                 </div>
 
                 <div className="LNav-container-nav">
-                    <Item myImg={thunder} myTitle="New In"/>
+                    <Item myImg={thunder} myTitle="New In" myClick="new"/>
 
-                    <Item myImg={clothing} myTitle="Clothing"/>
+                    <Item myImg={clothing} myTitle="Clothing" myClick="clothing"/>
 
-                    <Item myImg={shoes} myTitle="Shoes"/>
+                    <Item myImg={shoes} myTitle="Shoes" myClick="shoes"/>
 
-                    <Item myImg={accessories} myTitle="Accessories"/>
+                    <Item myImg={accessories} myTitle="Accessories" myClick="accessories"/>
 
-                    <Item myImg={activewear} myTitle="Active wear"/>
+                    <Item myImg={activewear} myTitle="Active wear" myClick="active"/>
 
-                    <Item myImg={gift} myTitle="Gifts & Living"/>
+                    <Item myImg={gift} myTitle="Gifts & Living" myClick="gift"/>
 
-                    <Item myImg={ring} myTitle="Inspiration"/>
+                    <Item myImg={ring} myTitle="Inspiration" myClick="inspiration"/>
                 </div>
             </div>
         </div>
