@@ -1,16 +1,18 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 function Contact() {
 
     useEffect(()=>{
 
-    fetch('')
-        .then((response) => {
-            return response.json()
-        })
-        .then((myJson) => {
-            console.log(myJson)
-        })
+        fetch('http://localhost:3000/posts')
+            .then((response) => {
+                return response.json()
+            })
+            .then((myJson) => {
+                myJson.map((item) => {
+                    console.log(item);
+                })
+            })
 
         // Cleanup function
         return () => {
