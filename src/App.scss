@@ -814,6 +814,11 @@ body{
         transform: translate(10%, -30%);
     }
 }
+@media screen and (max-width: 800px) {
+    .List-container-main{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 767px) {
     .Products{
         display: block;
