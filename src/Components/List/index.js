@@ -27,13 +27,13 @@ function List(props) {
             }
         }
 
-        window.addEventListener('resize', x);
+        window.addEventListener('resize', x)
 
         return ()=>{
-            window.removeEventListener('resize', x);
+            window.removeEventListener('resize', x)
         }
 
-    },[num])
+    }, [num])
 
     return (
         <div className="List">

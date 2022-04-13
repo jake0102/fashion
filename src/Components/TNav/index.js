@@ -2,16 +2,19 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestion, faBars, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faBars, faShoppingCart, faUser, faCookieBite } from '@fortawesome/free-solid-svg-icons'
 
 // Files
 import { FuncContext } from '../../Pages/Product'
+import { ContentsContext } from '../ContentsProvider'
 
 // Func
 
 function TNav() {
 
     const values = useContext(FuncContext)
+
+    const contents = useContext(ContentsContext)
 
     let ani
 
@@ -35,8 +38,8 @@ function TNav() {
                 </div>
 
 
-                <div className="TNav-nav-item">
-                    <Link to="/">Products</Link>
+                <div className="TNav-nav-item" onClick={() => contents.handleChangeContents('back')}>
+                    Products
                 </div>
 
                 <div className="TNav-nav-item">

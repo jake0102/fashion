@@ -115,6 +115,11 @@ body{
 .TNav-nav-item{
     margin: 0 0 0 2rem;
 
+    &:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+
     a{
         text-decoration: none;
         color: black;
