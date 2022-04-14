@@ -23,7 +23,19 @@ function Container(props) {
                         key=${item.id}
                     >
                         <img src="${item.img}" />
-                        ${item.des}
+                        <div class="List-container-main-item-title">
+                            <div class="List-container-main-item-price">
+                                ${item.des}
+                            </div>
+
+                            <div class="List-container-main-item-rating">
+                                <span>${item.rating}</span> / 5 rating
+                            </div>
+
+                            <div class="List-container-main-item-choice">
+                                ${item.recommend === true ? 'Recommended' : '' }
+                            </div>
+                        </div>
                     </div>`
                 ))
 
