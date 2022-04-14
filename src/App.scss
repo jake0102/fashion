@@ -935,3 +935,14 @@ body{
         width: 300px;
     }
 }
+@media screen and (max-width: 475px) {
+    .List-container{
+        // height: 338px;
+    }
+    .List-container-main{
+        width: 250px;
+    }
+    .List-container-main-item{
+        width: 250px;
+    }
+}
