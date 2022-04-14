@@ -6,7 +6,7 @@ function Container(props) {
 
     useEffect(()=>{
 
-        fetch('http://localhost:3000/posts')
+        fetch('http://localhost:3000/tshirt')
             .then((response) => {
                 return response.json()
             })
@@ -19,7 +19,7 @@ function Container(props) {
             })
             .then((items) => {
                 const html = items.map(item => (
-                    `<div class="List-container-main-item" key=${item.id}>${item.title}</div>`
+                    `<div class="List-container-main-item" key=${item.id}>${item.des}</div>`
                 ))
 
                 ContainerRef.current.innerHTML = html.join('')

@@ -5,5 +5,11 @@
     "comments": [
       { "id": 1, "body": "some comment", "postId": 1 }
     ],
+    "tshirt": [
+      { "id": 1, "des": "abc" },
+      { "id": 2, "des": "zyz" },
+      { "id": 3, "des": "iop" },
+      { "id": 4, "des": "tgnb" }
+    ],
     "profile": { "name": "typicode" }
 }
