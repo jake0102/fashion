@@ -21,7 +21,15 @@ import activewear from '../img/activewear.png'
 import gift from '../img/gift.png'
 import ring from '../img/ring.png'
 
+// Files
+import { useContext } from 'react'
+
+import { ContentsContext } from '../ContentsProvider'
+
 export default function QSwiper() {
+
+  const contents = useContext(ContentsContext)
+
   return (
     <>
       <Swiper
@@ -37,37 +45,37 @@ export default function QSwiper() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`new`)}>
           <img src={thunder}/>
           <span>New In</span>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`clothing`)}>
           <img src={clothing}/>
           <span>Clothing</span>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`shoes`)}>
           <img src={shoes} />
           <span>Shoes</span>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`accessories`)}>
           <img src={accessories} />
           <span>Accessories</span>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`active`)}>
           <img src={activewear} />
           <span>Activewear</span>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`gift`)}>
           <img src={gift} />
           <span>Gifts & Living</span>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={() => contents.handleChangeContents(`inspiration`)}>
           <img src={ring} />
           <span>Inspiration</span>
         </SwiperSlide>

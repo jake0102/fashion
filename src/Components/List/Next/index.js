@@ -11,8 +11,8 @@ function Next() {
     const scrollContext = useContext(ScrollContext)
 
     return (
-        <div className="List-container-next" ref={nextRef} onClick={() => scrollContext.handleScroll()}>
-            <div className="List-container-next-btn">
+        <div className="List-container-next">
+            <div className="List-container-next-btn" ref={nextRef} onClick={() => scrollContext.handleScroll('next')}>
                 <FontAwesomeIcon icon={faCaretRight} />
             </div>
         </div>

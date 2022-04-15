@@ -11,8 +11,8 @@ function Prev() {
     const scrollContext = useContext(ScrollContext)
 
     return (
-        <div className="List-container-prev" ref={prevRef} onClick={() => scrollContext.handleScroll()}>
-            <div className="List-container-prev-btn">
+        <div className="List-container-prev">
+            <div className="List-container-prev-btn" ref={prevRef} onClick={() => scrollContext.handleScroll('prev')}>
                 <FontAwesomeIcon icon={faCaretLeft} />
             </div>
         </div>

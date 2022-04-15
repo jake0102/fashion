@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react"
+import { forwardRef, useEffect, useRef } from "react"
 
 // import Item from '../Item'
 
-function Container(props) {
+function Container(props, ref) {
 
     const ContainerRef = useRef()
 
@@ -51,7 +51,7 @@ function Container(props) {
     }, [])
 
     return (
-        <div className="List-container-main" id="ListContainer">
+        <div className="List-container-main" ref={ref}>
             <div className="myRow" ref={ContainerRef}>
                 {/* innerHTML */}
             </div>
@@ -59,4 +59,4 @@ function Container(props) {
     )
 }
 
-export default Container
+export default forwardRef(Container)
