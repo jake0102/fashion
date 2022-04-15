@@ -57,7 +57,7 @@ function TNav() {
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/login">
+                    <Link to="/register">
                         <FontAwesomeIcon icon={faUser} />
                     </Link>
                 </div>

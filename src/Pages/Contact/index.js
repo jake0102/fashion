@@ -9,13 +9,33 @@ function Contact() {
     return (
         <div className="Contact">
             <div className="Contact-container">
-                
                 <div className="Contact-container-back">
                     <Link to="/">
                         <img src={home}/>
+                        {/* / Product */}
                     </Link>
                 </div>
 
+                <div className="Contact-container-nav">
+                    <div className="Contact-container-nav-contact">
+                        <span>/ Contact</span>
+
+                        <div className="Contact-container-nav-contact-hover">
+                            You was here!
+                        </div>
+                    </div>
+
+                    <div className="Contact-container-nav-reg">
+                        <span>/ Register</span>
+
+                        <Link to="/register">
+                            <div className="Contact-container-nav-reg-hover">
+                                Go!
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+                
                 <div className="Contact-container-form">
 
                     {/* Name */}
@@ -63,12 +83,18 @@ function Contact() {
 
                     {/* Submit */}
                     <div className="Contact-container-form-submit">
-                        <div className="Contact-container-form-submit-btn">Submit</div>
+                        <div className="Contact-container-form-submit-btn">
+                            <span>Submit</span>
+
+                            <div className="Contact-container-form-submit-btn-hover">
+                                Send!
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div className="Contact-container-poli">
-                    I agree to the <span style={{color: 'green', opacity: '.7'}}>&nbsp;terms&nbsp;</span> and <span style={{color: 'green', opacity: '.7'}}>&nbsp;conditions&nbsp;</span> and the privacy <span style={{color: 'green', opacity: '.7'}}>&nbsp;policy</span>
+                    Copyright © 2022 Jake Inc. All rights reserved.
                 </div>
             </div>
         </div>
