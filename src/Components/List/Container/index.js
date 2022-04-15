@@ -40,6 +40,9 @@ function Container(props, ref) {
                         </div>
                     </div>`
                 ))
+                .catch(() => {
+                    console.warn('eieieiei');
+                })
 
                 ContainerRef.current.innerHTML = html.join('')
             })
