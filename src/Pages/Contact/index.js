@@ -55,7 +55,7 @@ function Contact() {
 
                     {/* Comment */}
                     <div className="Contact-container-form-comment">
-                        <div>Comment</div>
+                        <div className="Contact-container-form-comment-title">Comment</div>
                         <div>
                             <textarea rows="5" spellCheck={false}/>
                         </div>
@@ -68,7 +68,7 @@ function Contact() {
                 </div>
                 
                 <div className="Contact-container-poli">
-                    I agree to the terms and conditions and the privacy policy
+                    I agree to the <span style={{color: 'green', opacity: '.7'}}>&nbsp;terms&nbsp;</span> and <span style={{color: 'green', opacity: '.7'}}>&nbsp;conditions&nbsp;</span> and the privacy <span style={{color: 'green', opacity: '.7'}}>&nbsp;policy</span>
                 </div>
             </div>
         </div>
