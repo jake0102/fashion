@@ -33,6 +33,35 @@ function Register() {
                         </div>
                     </div>
                 </div>
+
+                <div className="Reg-container-main">
+                    <div className="Reg-container-main-items">
+                        <div className="Reg-container-main-item">
+                            <div className="Reg-container-main-item-icon">
+                                <img src={home} />    
+                            </div>
+                            <div>Google</div>
+                        </div>
+                        <div className="Reg-container-main-item">
+                            <div className="Reg-container-main-item-icon">
+                                <img src={home} />    
+                            </div>
+                            <div>Google</div>
+                        </div>
+                        <div className="Reg-container-main-item">
+                            <div className="Reg-container-main-item-icon">
+                                <img src={home} />    
+                            </div>
+                            <div>Google</div>
+                        </div>
+                        <div className="Reg-container-main-item">
+                            <div className="Reg-container-main-item-icon">
+                                <img src={home} />    
+                            </div>
+                            <div>Google</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
