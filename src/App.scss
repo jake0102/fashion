@@ -986,6 +986,7 @@ body{
     background: white;
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, .3);
+    padding: 0 1rem 0 1rem;
 }
 .Reg-container-nav{
     padding: 0 0 1.5rem 0;
@@ -1072,6 +1073,27 @@ body{
     transition: all .6s ease;
     background: linear-gradient(to right, rgb(114, 199, 255, .3), rgb(147, 109, 253, .3));
     border-radius: 100rem;
+}
+.Reg-container-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Reg-container-main-items{
+    width: 300px;
+}
+.Reg-container-main-item{
+    width: 100%;
+    height: 45px;
+    border-radius: 100rem;
+    margin: 0 0 2rem 0;
+    border: 2px solid rgb(210, 210, 210, 0.7);
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 20px;
+    }
 }
 
 // Swiper
@@ -1221,6 +1243,9 @@ body{
 }
 @media screen and (max-width: 600px){
     .Contact-container{
+        width: 95%;
+    }
+    .Register-container{
         width: 95%;
     }
 }
