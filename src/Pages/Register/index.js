@@ -7,6 +7,7 @@ import github from '../../Components/img/github.png'
 import user from '../../Components/img/user.png'
 
 function Register() {
+
     return (
         <div className="Register">
             <div className="Register-container">

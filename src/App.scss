@@ -1092,9 +1092,18 @@ body{
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
     &:hover{
         cursor: pointer;
+    }
+
+    &:hover .Reg-container-main-item-icon{
+        transform: translateX(calc(50% - 1.5rem));
+    }
+
+    &:hover .Reg-container-main-item-title{
+        opacity: 0;
     }
 }
 .Reg-container-main-item-icon{
@@ -1106,6 +1115,7 @@ body{
     display: flex;
     align-items: center;
     padding-left: 1rem;
+    transition: all .6s ease;
 
     img{
         width: 20px;
@@ -1116,6 +1126,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .6s ease;
 }
 
 // Swiper

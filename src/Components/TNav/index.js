@@ -46,9 +46,9 @@ function TNav() {
                     <Link to="/contact">Contact</Link>
                 </div>
 
-                <div className="TNav-nav-item">
+                {/* <div className="TNav-nav-item">
                     <Link to="/about">About us</Link>
-                </div>
+                </div> */}
 
                 <div className="TNav-nav-item">
                     <Link to="/cart">
