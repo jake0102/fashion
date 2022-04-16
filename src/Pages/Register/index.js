@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 
 import home from '../../Components/img/home.png'
+import google from '../../Components/img/google.png'
+import facebook from '../../Components/img/facebook.png'
+import github from '../../Components/img/github.png'
+import user from '../../Components/img/user.png'
 
 function Register() {
     return (
@@ -38,27 +42,27 @@ function Register() {
                     <div className="Reg-container-main-items">
                         <div className="Reg-container-main-item">
                             <div className="Reg-container-main-item-icon">
-                                <img src={home} />    
+                                <img src={google} />    
                             </div>
-                            <div>Google</div>
+                            <div className="Reg-container-main-item-title">Google</div>
                         </div>
                         <div className="Reg-container-main-item">
                             <div className="Reg-container-main-item-icon">
-                                <img src={home} />    
+                                <img src={facebook} />    
                             </div>
-                            <div>Google</div>
+                            <div className="Reg-container-main-item-title">Facebook</div>
                         </div>
                         <div className="Reg-container-main-item">
                             <div className="Reg-container-main-item-icon">
-                                <img src={home} />    
+                                <img src={github} />    
                             </div>
-                            <div>Google</div>
+                            <div className="Reg-container-main-item-title">Github</div>
                         </div>
                         <div className="Reg-container-main-item">
                             <div className="Reg-container-main-item-icon">
-                                <img src={home} />    
+                                <img src={user} />    
                             </div>
-                            <div>Google</div>
+                            <div className="Reg-container-main-item-title">Email</div>
                         </div>
                     </div>
                 </div>
