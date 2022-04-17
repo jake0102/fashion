@@ -1,5 +1,5 @@
 // React methods
-import { createContext, useState } from 'react'
+import { createContext, useState, useEffect } from 'react'
 
 // Files
 import P_Home from '../P_Home'
@@ -36,9 +36,6 @@ function ContentsProvider( { children } ){
             case 'active':
                 setContent(<Active />)
                 break;
-            case 'onepiece':
-                setContent(<OnePiece />)
-                break;
             case 'autumn':
                 setContent(<Autumn />)
                 break;
@@ -71,10 +68,18 @@ function ContentsProvider( { children } ){
                 break;
         }
     }
+
+    const [search, setSearch] = useState('')
+
+    const handleSearch = (e) => {
+        setSearch(e.target.value)
+    }
     
     const contents = {
         content,
-        handleChangeContents
+        search,
+        handleChangeContents,
+        handleSearch
     }
 
     return(

@@ -38,6 +38,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 .TNav-nav-bar{
     height: 50px;
@@ -152,6 +156,10 @@ body{
     color: rgb(253, 109, 133);
     letter-spacing: 3px;
     margin: 2rem 0 2rem 0;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 .LNav-container-title{
     font-size: 30px;
@@ -497,7 +505,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(245, 245, 245);
+    background: white;
     z-index: 100;
 }
 .MModal-nav{
@@ -525,6 +533,53 @@ body{
     &:hover{
         cursor: pointer;
         background-color: rgb(245, 245, 245);
+    }
+}
+.MModal-nav-item{
+    margin: 0 0 2rem 0;
+
+    &:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+
+        &:hover{
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+.MModal-search{
+    margin: 0 0 2rem 0;
+
+    svg{
+        font-size: 20px;
+        color: rgb(253, 103, 128);
+    }
+
+    &:hover input{
+        border-bottom: 2px solid rgb(210, 210, 210);
+    }
+
+    input{
+        margin-left: 1rem;
+        width: 250px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border: 2px solid rgb(210, 210, 210, 0);
+
+        &::placeholder{
+            opacity: .5;
+        }
+
+        &:focus{
+            border-bottom: 2px solid rgb(210, 210, 210);
+        }
     }
 }
 
@@ -751,8 +806,8 @@ body{
 .Contact{
     height: 100vh;
     width: 100%;
-    background: rgb(210, 210, 210, 0.3);
-    // background: url('https://images.unsplash.com/photo-1616761512547-ea151d8a56d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1512&q=80') center/cover no-repeat;
+    // background: rgb(210, 210, 210, 0.3);
+    background: url('https://images.unsplash.com/photo-1616761512547-ea151d8a56d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1512&q=80') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -975,8 +1030,8 @@ body{
 .Register{
     height: 100vh;
     width: 100%;
-    background: rgb(210, 210, 210, 0.3);
-    // background: url('https://images.unsplash.com/photo-1616761512547-ea151d8a56d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1512&q=80') center/cover no-repeat;
+    // background: rgb(210, 210, 210, 0.3);
+    background: url('https://images.unsplash.com/photo-1616761512547-ea151d8a56d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1512&q=80') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

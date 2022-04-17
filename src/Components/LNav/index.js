@@ -1,3 +1,5 @@
+import { useContext, useEffect, useRef } from 'react'
+
 import thunder from '../img/thunder.png'
 import clothing from '../img/clothing.png'
 import shoes from '../img/shoes.png'
@@ -7,12 +9,16 @@ import gift from '../img/gift.png'
 import ring from '../img/ring.png'
 
 import Item from './Item'
+import { ContentsContext } from '../ContentsProvider'
 
 function LNav() {
+
+    const contents = useContext(ContentsContext)
+
     return (
         <div className="LNav">
             <div className="LNav-container">
-                <div className="LNav-container-logo">
+                <div className="LNav-container-logo" onClick={() => contents.handleChangeContents('back')}>
                     Yashion
                 </div>
 

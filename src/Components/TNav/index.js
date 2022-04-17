@@ -1,8 +1,8 @@
 // React methods
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestion, faBars, faShoppingCart, faUser, faCookieBite } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faBars, faShoppingCart, faUser, faCookieBite, faBell } from '@fortawesome/free-solid-svg-icons'
 
 // Files
 import { FuncContext } from '../../Pages/Product'
@@ -20,15 +20,76 @@ function TNav() {
 
     values.scaleAni === true ? ani = 'scale8Animation' : ani = ''
 
+    useEffect(()=>{
+
+        switch (contents.search) {
+            case 'tshirt':
+                contents.handleChangeContents('tshirt')
+                break;
+            case 'shoes':
+                contents.handleChangeContents('shoes')
+                break;
+            case 'one piece':
+                contents.handleChangeContents('onepiece')
+                break;
+            case 'active':
+                contents.handleChangeContents('active')
+                break;
+            case 'autumn':
+                contents.handleChangeContents('autumn')
+                break;
+            case 'summer':
+                contents.handleChangeContents('summer')
+                break;
+            case 'accessories':
+                contents.handleChangeContents('accessories')
+                break;
+            case 'sale shoes':
+                contents.handleChangeContents('saleshoes')
+                break;
+            case 'new':
+                contents.handleChangeContents('new')
+                break;
+            case 'clothing':
+                contents.handleChangeContents('clothing')
+                break;
+            case 'gift':
+                contents.handleChangeContents('gift')
+                break;
+            case 'inspiration':
+                contents.handleChangeContents('inspiration')
+                break;
+            default:
+                break;
+        }
+
+    }, [contents.search])
+
+    const searchRef = useRef()
+
     return (
         <div className="TNav">
-            <div className="TNav-container-logo">
+            <div className="TNav-container-logo" onClick={() => contents.handleChangeContents('back')}>
                 Yashion
             </div>
 
             <div className="TNav-search">
                 <FontAwesomeIcon icon={faQuestion} />
-                <input type="text" placeholder="Search..." spellCheck={false}/>
+                <input 
+                    ref={searchRef}
+                    type="text" 
+                    placeholder="Search..." 
+                    spellCheck={false} 
+                    onKeyUp={
+                        (e) => {
+                            if(e.keyCode === 13){
+                                contents.handleSearch(e)
+
+                                searchRef.current.value = ""
+                            }
+                        }
+                    }
+                />
             </div>
 
             <div className="TNav-nav">
@@ -39,7 +100,7 @@ function TNav() {
 
 
                 <div className="TNav-nav-item" onClick={() => contents.handleChangeContents('back')}>
-                    Products
+                    Home
                 </div>
 
                 <div className="TNav-nav-item">
@@ -47,7 +108,7 @@ function TNav() {
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/about">About us</Link>
+                    <Link to="/register">Register</Link>
                 </div>
 
                 <div className="TNav-nav-item">
@@ -57,9 +118,7 @@ function TNav() {
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/register">
-                        <FontAwesomeIcon icon={faUser} />
-                    </Link>
+                    <FontAwesomeIcon icon={faBell} />
                 </div>
             </div>
         </div>
