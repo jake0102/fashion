@@ -1,7 +1,22 @@
+import { useState, useEffect } from 'react'
+
 function About() {
+
+    const [name, setName] = useState('ogino')
+
+    useEffect(()=>{
+
+        console.log(name)
+
+    }, [name])
+
     return (
         <div>
-            <h1>about</h1>
+            <button
+                onClick={() => setName('quan')}
+            >
+                Click
+            </button>
         </div>
     )
 }

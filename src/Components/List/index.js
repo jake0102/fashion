@@ -1,4 +1,4 @@
-import { createContext, useEffect, useRef } from 'react'
+import { createContext, useEffect, useRef, useState } from 'react'
 
 import BackToPHome from '../BackToPHome'
 import Container from './Container'
@@ -9,6 +9,23 @@ import Next from './Next'
 export const ScrollContext = createContext()
 
 function List(props) {
+
+    const [w, setW] = useState(window.innerWidth)
+
+    useEffect(()=>{
+        const handleResize = () => {
+            setW(window.innerWidth)
+        }
+
+        window.addEventListener('resize', handleResize)
+
+        console.log(w)
+
+        // Cleanup function
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [window.innerWidth])
 
     const handleScroll = (value) => {
         switch (value) {
