@@ -1,9 +1,3 @@
-import { forwardRef, useEffect, useRef, useContext } from "react"
-
-// import Item from '../Item'
-import cart from '../../img/cart.png'
-import { ContentsContext } from '../../ContentsProvider'
-
 const data = [
     {
         id: 1,
@@ -407,89 +401,8 @@ const data = [
     }
 ]
 
-function Container(props, ref) {
-
-    const ContainerRef = useRef()
-
-    const contents = useContext(ContentsContext)
-
-    // useEffect(()=>{
-
-    //     fetch(`http://localhost:3000/${props.link}`)
-    //         .then((response) => {
-    //             return response.json()
-    //         })
-    //         .then((myJson) => {
-    //             const items = myJson.map((item)=>{
-    //                 return item
-    //             })
-
-    //             return items
-    //         })
-    //         .then((items) => {
-    //             const html = items.map(item => (
-    //                 `<div class="List-container-main-item" 
-    //                     key=${item.id}
-    //                 >
-    //                     <img src="${item.img}" />
-    //                     <div class="List-container-main-item-title">
-    //                         <div class="List-container-main-item-price">
-    //                             ${item.des}
-    //                         </div>
-
-    //                         <div class="List-container-main-item-rating">
-    //                             <span>${item.rating}</span> / 5 rating
-    //                         </div>
-
-    //                         <div class="List-container-main-item-choice">
-    //                             ${item.recommend === true ? 'Recommended' : '' }
-    //                         </div>
-    //                     </div>
-    //                 </div>`
-    //             ))
-
-    //             ContainerRef.current.innerHTML = html.join('')
-    //         })
-        
-    //     return () => {
-
-    //     }
-    // }, [])
-
-    return (
-        <div className="List-container-main" ref={ref}>
-            <div className="myRow" ref={ContainerRef}>
-                {data.map((item, index)=>{
-                    if(props.link == item.type){
-                        return(
-                            <div className="List-container-main-item" 
-                                key={index}
-                            >
-                                <img src={item.img} />
-                                <div className="List-container-main-item-title">
-                                    <div className="List-container-main-item-price">
-                                        {item.des}
-                                    </div>
-                    
-                                    <div className="List-container-main-item-rating">
-                                        <span>{item.rating}</span> / 5 rating
-                                    </div>
-                    
-                                    <div className="List-container-main-item-choice">
-                                        {item.recommend === true ? 'Recommended' : '' }
-                                    </div>
-                    
-                                    <div className="List-container-main-item-add" onClick={() => contents.handleAdd(item.id)}>
-                                        <img src={cart} />
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    }
-                })}
-            </div>
-        </div>
-    )
+function Data(){
+    return data
 }
 
-export default forwardRef(Container)
+export default Data

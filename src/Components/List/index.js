@@ -19,8 +19,6 @@ function List(props) {
 
         window.addEventListener('resize', handleResize)
 
-        console.log(w)
-
         // Cleanup function
         return () => {
             window.removeEventListener('resize', handleResize)
@@ -28,15 +26,28 @@ function List(props) {
     }, [window.innerWidth])
 
     const handleScroll = (value) => {
-        switch (value) {
-            case 'next':
-                xRef.current.scrollLeft += 330
-                break;
-            case 'prev':
-                xRef.current.scrollLeft -= 330
-                break;
-            default:
-                break;
+        if(w <= 475){
+            switch (value) {
+                case 'next':
+                    xRef.current.scrollLeft += 280
+                    break;
+                case 'prev':
+                    xRef.current.scrollLeft -= 280
+                    break;
+                default:
+                    break;
+            }
+        }else{
+            switch (value) {
+                case 'next':
+                    xRef.current.scrollLeft += 330
+                    break;
+                case 'prev':
+                    xRef.current.scrollLeft -= 330
+                    break;
+                default:
+                    break;
+            }
         }
     }
 

@@ -71,17 +71,23 @@ function ContentsProvider( { children } ){
 
     const [search, setSearch] = useState('')
 
+    const [item, setItem] = useState([])
+
     const handleSearch = (e) => {
         setSearch(e.target.value)
     }
 
-    const handleAdd = () => {
-        console.log('test');
+    const handleAdd = (value) => {
+        setItem([
+            ...item,
+            value
+        ])
     }
     
     const contents = {
         content,
         search,
+        item,
         handleChangeContents,
         handleSearch,
         handleAdd
