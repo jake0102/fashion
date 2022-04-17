@@ -11,8 +11,8 @@ function Contact() {
             <div className="Contact-container">
                 <div className="Contact-container-back">
                     <Link to="/">
-                        <img src={home}/>
-                        {/* / Product */}
+                        {/* <img src={home}/> */}
+                        Yashion
                     </Link>
                 </div>
 

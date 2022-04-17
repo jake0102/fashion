@@ -13,8 +13,8 @@ function Register() {
             <div className="Register-container">
                 <div className="Reg-container-back">
                     <Link to="/">
-                        <img src={home}/>
-                        {/* / Product */}
+                        {/* <img src={home}/> */}
+                        Yashion
                     </Link>
                 </div>
 

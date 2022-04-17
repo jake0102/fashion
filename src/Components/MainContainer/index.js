@@ -2,6 +2,7 @@ import { useContext } from 'react'
 
 import { ContentsProvider, ContentsContext } from '../ContentsProvider'
 
+
 function MainContainer() {
 
     const contents = useContext(ContentsContext)
