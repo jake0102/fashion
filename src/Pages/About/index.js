@@ -1,22 +1,19 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import Ogino from '../ogino'
 
 function About() {
 
-    const [name, setName] = useState('ogino')
-
-    useEffect(()=>{
-
-        console.log(name)
-
-    }, [name])
+    const [show, setShow] = useState(false)
 
     return (
         <div>
             <button
-                onClick={() => setName('quan')}
+                onClick={() => setShow(!show)}
             >
                 Click
             </button>
+
+            {show && <Ogino />}
         </div>
     )
 }
