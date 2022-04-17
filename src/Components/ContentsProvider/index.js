@@ -74,12 +74,17 @@ function ContentsProvider( { children } ){
     const handleSearch = (e) => {
         setSearch(e.target.value)
     }
+
+    const handleAdd = () => {
+        console.log('test');
+    }
     
     const contents = {
         content,
         search,
         handleChangeContents,
-        handleSearch
+        handleSearch,
+        handleAdd
     }
 
     return(

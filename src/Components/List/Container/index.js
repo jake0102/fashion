@@ -1,6 +1,8 @@
-import { forwardRef, useEffect, useRef } from "react"
+import { forwardRef, useEffect, useRef, useContext } from "react"
 
 // import Item from '../Item'
+import cart from '../../img/cart.png'
+import { ContentsContext } from '../../ContentsProvider'
 
 const data = [
     {
@@ -409,81 +411,82 @@ function Container(props, ref) {
 
     const ContainerRef = useRef()
 
-    useEffect(()=>{
+    const contents = useContext(ContentsContext)
 
-        // fetch(`http://localhost:3000/${props.link}`)
-        //     .then((response) => {
-        //         return response.json()
-        //     })
-        //     .then((myJson) => {
-        //         const items = myJson.map((item)=>{
-        //             return item
-        //         })
+    // useEffect(()=>{
 
-        //         return items
-        //     })
-        //     .then((items) => {
-        //         const html = items.map(item => (
-        //             `<div class="List-container-main-item" 
-        //                 key=${item.id}
-        //             >
-        //                 <img src="${item.img}" />
-        //                 <div class="List-container-main-item-title">
-        //                     <div class="List-container-main-item-price">
-        //                         ${item.des}
-        //                     </div>
+    //     fetch(`http://localhost:3000/${props.link}`)
+    //         .then((response) => {
+    //             return response.json()
+    //         })
+    //         .then((myJson) => {
+    //             const items = myJson.map((item)=>{
+    //                 return item
+    //             })
 
-        //                     <div class="List-container-main-item-rating">
-        //                         <span>${item.rating}</span> / 5 rating
-        //                     </div>
+    //             return items
+    //         })
+    //         .then((items) => {
+    //             const html = items.map(item => (
+    //                 `<div class="List-container-main-item" 
+    //                     key=${item.id}
+    //                 >
+    //                     <img src="${item.img}" />
+    //                     <div class="List-container-main-item-title">
+    //                         <div class="List-container-main-item-price">
+    //                             ${item.des}
+    //                         </div>
 
-        //                     <div class="List-container-main-item-choice">
-        //                         ${item.recommend === true ? 'Recommended' : '' }
-        //                     </div>
-        //                 </div>
-        //             </div>`
-        //         ))
+    //                         <div class="List-container-main-item-rating">
+    //                             <span>${item.rating}</span> / 5 rating
+    //                         </div>
 
-        //         ContainerRef.current.innerHTML = html.join('')
-        //     })
+    //                         <div class="List-container-main-item-choice">
+    //                             ${item.recommend === true ? 'Recommended' : '' }
+    //                         </div>
+    //                     </div>
+    //                 </div>`
+    //             ))
 
-        const html = data.map(item => {
-            if(props.link == item.type){
-                return(
-                    `<div class="List-container-main-item" 
-                        key=${item.id}
-                    >
-                        <img src="${item.img}" />
-                        <div class="List-container-main-item-title">
-                            <div class="List-container-main-item-price">
-                                ${item.des}
-                            </div>
-
-                            <div class="List-container-main-item-rating">
-                                <span>${item.rating}</span> / 5 rating
-                            </div>
-
-                            <div class="List-container-main-item-choice">
-                                ${item.recommend === true ? 'Recommended' : '' }
-                            </div>
-                        </div>
-                    </div>`
-                )
-            }
-        })
-
-        ContainerRef.current.innerHTML = html.join('')
+    //             ContainerRef.current.innerHTML = html.join('')
+    //         })
         
-        // Cleanup function
-        return () => {
+    //     return () => {
 
-        }
-    }, [])
+    //     }
+    // }, [])
 
     return (
         <div className="List-container-main" ref={ref}>
             <div className="myRow" ref={ContainerRef}>
-                {/* innerHTML */}
+                {data.map((item, index)=>{
+                    if(props.link == item.type){
+                        return(
+                            <div className="List-container-main-item" 
+                                key={index}
+                            >
+                                <img src={item.img} />
+                                <div className="List-container-main-item-title">
+                                    <div className="List-container-main-item-price">
+                                        {item.des}
+                                    </div>
+                    
+                                    <div className="List-container-main-item-rating">
+                                        <span>{item.rating}</span> / 5 rating
+                                    </div>
+                    
+                                    <div className="List-container-main-item-choice">
+                                        {item.recommend === true ? 'Recommended' : '' }
+                                    </div>
+                    
+                                    <div className="List-container-main-item-add" onClick={() => contents.handleAdd()}>
+                                        <img src={cart} />
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
+                })}
             </div>
         </div>
     )

@@ -16,6 +16,10 @@ function Item(props) {
                 <div class="List-container-main-item-choice">
                     {props.myRecommend === true ? 'Recommended' : '' }
                 </div>
+
+                <div class="List-container-main-item-add">
+                    <img src={props.myImg} />
+                </div>
             </div>
         </div>
     )
