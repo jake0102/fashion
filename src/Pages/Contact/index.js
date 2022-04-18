@@ -1,9 +1,4 @@
-import Ogino from "../../Components/ogino_request"
-import A from "../../Components/Ogino_a"
-
 import { Link } from 'react-router-dom'
-
-import home from '../../Components/img/home.png'
 
 function Contact() {
     return (
@@ -11,7 +6,6 @@ function Contact() {
             <div className="Contact-container">
                 <div className="Contact-container-back">
                     <Link to="/">
-                        {/* <img src={home}/> */}
                         Yashion
                     </Link>
                 </div>
