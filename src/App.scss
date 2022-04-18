@@ -717,7 +717,7 @@ body{
     right: 0;
     width: 40px;
     height: 40px;
-    background: rgb(210, 210, 210, .7);
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1219,6 +1219,7 @@ body{
 }
 .Cart-header{
     width: 100%;
+    height: 70px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -1227,10 +1228,10 @@ body{
     top: 0;
     left: 0;
     z-index: 99999;
+    background: white;
+    box-shadow: 3px 3px 7px rgb(210, 210, 210);
 }
 .Cart-container-back{
-    height: 50px;
-    // border: 1px solid blue;
     display: flex;
     align-items: center;
     font-size: 50px;
@@ -1251,6 +1252,7 @@ body{
 }
 .Cart-nav-item{
     margin: 0 0 0 2rem;
+    font-weight: 500;
 
     &:hover{
         cursor: pointer;
@@ -1268,7 +1270,65 @@ body{
     }
 }
 .Cart-body{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Cart-body-main{
+    width: 70%;
+}
+.Cart-body-item{
+    width: 100%;
+    height: 170px;
+    border: 1px solid rgb(210, 210, 210, .4);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 0 2rem 0;
+    display: flex;
+    position: relative;
+}
+.Cart-body-item-img{
+    width: 150px;
+    height: 100%;
+    margin-right: 1rem;
 
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.Cart-body-item-inf{
+
+}
+.Cart-body-item-inf-item{
+    margin-bottom: .5rem;
+}
+.Cart-body-item-btnG{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(210, 210, 210, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        cursor: pointer;
+        opacity: .7;
+    }
+
+    img{
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
 }
 
 // Swiper
