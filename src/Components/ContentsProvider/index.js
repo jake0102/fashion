@@ -83,6 +83,18 @@ function ContentsProvider( { children } ){
             value
         ])
     }
+
+    const handleDel = (id) => {
+        for(let i = 0; i < item.length; i++){
+            if(item[i] === id){
+                item.splice(i, 1)
+
+                setItem([
+                    ...item
+                ])
+            }
+        }
+    }
     
     const contents = {
         content,
@@ -90,7 +102,8 @@ function ContentsProvider( { children } ){
         item,
         handleChangeContents,
         handleSearch,
-        handleAdd
+        handleAdd,
+        handleDel
     }
 
     return(

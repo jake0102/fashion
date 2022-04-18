@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestion, faBars, faShoppingCart, faUser, faCookieBite, faBell } from '@fortawesome/free-solid-svg-icons'
 
 import { ContentsContext } from '../../Components/ContentsProvider'
-import buy from '../../Components/img/buy.png'
+import close from '../../Components/img/close.png'
 
 const data = [
     {
@@ -413,12 +413,6 @@ function Cart() {
 
     const contents = useContext(ContentsContext)
 
-    // useEffect(()=>{
-
-    //     let pickupItem = contents.item
-
-    // }, [contents.item])
-
     return (
         <div className="Cart">
             <div className="Cart-header">
@@ -457,14 +451,14 @@ function Cart() {
             <div className="Cart-body">
 
                 <div className="Cart-body-main">
-                    <div>
+                    <div className="Cart-body-main-title">
                         <h2>Shopping Cart</h2>
                     </div>
 
                     {
                         data.map((item, index) => {
                             for(let i = 0; i < contents.item.length; i++){
-                                if(item.id == contents.item[i]){
+                                if(item.id === contents.item[i]){
                                     return(
                                         <div key={index} className="Cart-body-item">
                                             <div className="Cart-body-item-img">
@@ -477,8 +471,8 @@ function Cart() {
                                                 <div className="Cart-body-item-inf-item">Type: {item.type}</div>
                                             </div>
 
-                                            <div className="Cart-body-item-btnG">
-                                                <img src={buy} />
+                                            <div className="Cart-body-item-btnG" onClick={() => contents.handleDel(item.id)}>
+                                                <img src={close} />
                                             </div>
                                         </div>
                                     )

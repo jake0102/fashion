@@ -104,10 +104,6 @@ function TNav() {
                 </div>
 
                 <div className="TNav-nav-item">
-                    <Link to="/about">About</Link>
-                </div>
-
-                <div className="TNav-nav-item">
                     <Link to="/contact">Contact</Link>
                 </div>
 
