@@ -835,6 +835,7 @@ body{
 
 // Contact
 .Contact{
+    height: 100vh;
     width: 100%;
     // background: rgb(210, 210, 210, 0.3);
     background: url('https://images.unsplash.com/photo-1616761512547-ea151d8a56d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1512&q=80') center/cover no-repeat;
@@ -1478,6 +1479,9 @@ body{
     }
     .Products-right{
         width: 100%;
+    }
+    .Cart-body-main{
+        width: 95%;
     }
 }
 @media screen and (max-width: 600px){
