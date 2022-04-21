@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestion, faBars, faShoppingCart, faUser, faCookieBite, faBell } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart, faBell } from '@fortawesome/free-solid-svg-icons'
 
 import { ContentsContext } from '../../Components/ContentsProvider'
 import close from '../../Components/img/close.png'
@@ -41,7 +41,7 @@ const data = [
     },
     {
         id: 5,
-        img: "https://images.unsplash.com/photo-1525200845123-a29d24f1ae65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        img: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         des: "$2.99",
         rating: "3",
         recommend: false,
@@ -49,7 +49,7 @@ const data = [
     },
     {
         id: 6,
-        img: "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        img: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
         des: "$2.99",
         rating: "3",
         recommend: false,
@@ -406,7 +406,183 @@ const data = [
         rating: "3",
         recommend: false,
         type: "inspiration"
-    }
+    },
+    {
+        id: 51,
+        img: "https://images.unsplash.com/photo-1580980379270-cf860f6db3c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1482&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "shoes"
+    },
+    {
+        id: 52,
+        img: "https://images.unsplash.com/photo-1580902394836-21e0d429b7f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "shoes"
+    },
+    {
+        id: 53,
+        img: "https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=672&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "onepiece"
+    },
+    {
+        id: 54,
+        img: "https://images.unsplash.com/photo-1617551307538-c9cdb9d71289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "onepiece"
+    },
+    {
+        id: 55,
+        img: "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "active"
+    },
+    {
+        id: 56,
+        img: "https://images.unsplash.com/photo-1598267416824-5907946a3810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=737&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "active"
+    },
+    {
+        id: 57,
+        img: "https://images.unsplash.com/photo-1600574691453-499962cc0611?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "autumn"
+    },
+    {
+        id: 58,
+        img: "https://images.unsplash.com/photo-1583333001978-8c57d752ce5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "autumn"
+    },
+    {
+        id: 59,
+        img: "https://images.unsplash.com/photo-1586768035797-a2a84bb1953a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "summer"
+    },
+    {
+        id: 60,
+        img: "https://images.unsplash.com/photo-1598211664451-1458e4a3e279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "summer"
+    },
+    {
+        id: 61,
+        img: "https://images.unsplash.com/photo-1586878341523-7acb55eb8c12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "accessories"
+    },
+    {
+        id: 62,
+        img: "https://images.unsplash.com/photo-1623680621227-533cdf197a31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "accessories"
+    },
+    {
+        id: 63,
+        img: "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "saleshoes"
+    },
+    {
+        id: 64,
+        img: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "saleshoes"
+    },
+    {
+        id: 65,
+        img: "https://images.unsplash.com/photo-1494496195158-c3becb4f2475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "new"
+    },
+    {
+        id: 66,
+        img: "https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1490&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "new"
+    },
+    {
+        id: 67,
+        img: "https://images.unsplash.com/photo-1583333001978-8c57d752ce5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "clothing"
+    },
+    {
+        id: 68,
+        img: "https://images.unsplash.com/photo-1586768035797-a2a84bb1953a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "clothing"
+    },
+    {
+        id: 69,
+        img: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "gift"
+    },
+    {
+        id: 70,
+        img: "https://images.unsplash.com/photo-1494496195158-c3becb4f2475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "gift"
+    },
+    {
+        id: 71,
+        img: "https://images.unsplash.com/photo-1613945407943-59cd755fd69e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "inspiration"
+    },
+    {
+        id: 72,
+        img: "https://images.unsplash.com/photo-1586104237516-5b7075e00d45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        des: "$2.99",
+        rating: "3",
+        recommend: false,
+        type: "inspiration"
+    },
 ]
 
 function Cart() {
@@ -449,7 +625,6 @@ function Cart() {
             </div>
 
             <div className="Cart-body">
-
                 <div className="Cart-body-main">
                     <div className="Cart-body-main-title">
                         <h2>Shopping Cart</h2>
