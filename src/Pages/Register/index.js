@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-import home from '../../Components/img/home.png'
 import google from '../../Components/img/google.png'
 import facebook from '../../Components/img/facebook.png'
 import github from '../../Components/img/github.png'

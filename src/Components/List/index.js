@@ -12,7 +12,7 @@ function List(props) {
 
     const [w, setW] = useState(window.innerWidth)
 
-    useEffect(()=>{
+    useEffect(() => {
         const handleResize = () => {
             setW(window.innerWidth)
         }
@@ -29,10 +29,10 @@ function List(props) {
         if(w <= 475){
             switch (value) {
                 case 'next':
-                    xRef.current.scrollLeft += 280
+                    containerRef.current.scrollLeft += 280
                     break;
                 case 'prev':
-                    xRef.current.scrollLeft -= 280
+                    containerRef.current.scrollLeft -= 280
                     break;
                 default:
                     break;
@@ -40,10 +40,10 @@ function List(props) {
         }else{
             switch (value) {
                 case 'next':
-                    xRef.current.scrollLeft += 330
+                    containerRef.current.scrollLeft += 330
                     break;
                 case 'prev':
-                    xRef.current.scrollLeft -= 330
+                    containerRef.current.scrollLeft -= 330
                     break;
                 default:
                     break;
@@ -55,7 +55,7 @@ function List(props) {
         handleScroll
     }
 
-    const xRef = useRef()
+    const containerRef = useRef()
 
     return (
         <ScrollContext.Provider value={values}>
@@ -71,7 +71,7 @@ function List(props) {
                 <div className="List-container">
                     <Prev />
 
-                    <Container link={props.myLink} ref={xRef}/>
+                    <Container link={props.myLink} ref={containerRef}/>
 
                     <Next />
                 </div>

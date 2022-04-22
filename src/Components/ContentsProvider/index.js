@@ -22,6 +22,14 @@ function ContentsProvider( { children } ){
 
     const [content, setContent] = useState(<P_Home />)
 
+    const [search, setSearch] = useState('')
+
+    const [item, setItem] = useState([])
+
+    const [conf, setConf] = useState(false)
+
+    const [value_, setValue_] = useState()
+
     const handleChangeContents = function(value){
         switch (value) {
             case 'tshirt':
@@ -69,19 +77,27 @@ function ContentsProvider( { children } ){
         }
     }
 
-    const [search, setSearch] = useState('')
-
-    const [item, setItem] = useState([])
-
     const handleSearch = (e) => {
         setSearch(e.target.value)
     }
 
-    const handleAdd = (value) => {
+    const handleGet = (value) => {
+        setConf(!conf)
+
+        setValue_(value)
+    }
+
+    const handleCancel = () => {
+        setConf(!conf)
+    }
+
+    const handleAdd = () => {
         setItem([
             ...item,
-            value
+            value_
         ])
+
+        setConf(!conf)
     }
 
     const handleDel = (id) => {
@@ -100,10 +116,13 @@ function ContentsProvider( { children } ){
         content,
         search,
         item,
+        conf,
         handleChangeContents,
         handleSearch,
         handleAdd,
-        handleDel
+        handleDel,
+        handleGet,
+        handleCancel
     }
 
     return(

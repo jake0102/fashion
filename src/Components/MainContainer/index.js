@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 
-import { ContentsProvider, ContentsContext } from '../ContentsProvider'
+import { ContentsContext } from '../ContentsProvider'
 
 
 function MainContainer() {

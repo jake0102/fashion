@@ -7,6 +7,7 @@ import TNav from '../../Components/TNav'
 import MNav from '../../Components/MNav'
 import MModal from '../../Components/MModal'
 import MainContainer from '../../Components/MainContainer'
+import Confirm from '../../Components/Confirm'
 
 // Function
 export const FuncContext = createContext()
@@ -35,6 +36,7 @@ function Product() {
                 <MainContainer />
                 <MNav />
                 <MModal show={show}/>
+                <Confirm />
             </FuncContext.Provider>
         </>
     )

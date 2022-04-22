@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef, useContext } from "react"
+import { forwardRef, useEffect, useRef, useContext, useState } from "react"
 
 // import Item from '../Item'
 import cart from '../../img/cart.png'
@@ -635,9 +635,10 @@ function Container(props, ref) {
     return (
         <div className="List-container-main" ref={ref}>
             <div className="myRow" ref={ContainerRef}>
-                {data.map((item, index)=>{
+                {data.map((item, index) => {
                     if(props.link == item.type){
                         return(
+                            <>
                             <div className="List-container-main-item" 
                                 key={index}
                             >
@@ -655,11 +656,12 @@ function Container(props, ref) {
                                         {item.recommend === true ? 'Recommended' : '' }
                                     </div>
                     
-                                    <div className="List-container-main-item-add" onClick={() => contents.handleAdd(item.id)}>
+                                    <div className="List-container-main-item-add" onClick={() => contents.handleGet(item.id)}>
                                         <img src={cart} />
                                     </div>
                                 </div>
                             </div>
+                            </>
                         )
                     }
                 })}

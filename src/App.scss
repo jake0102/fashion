@@ -738,6 +738,85 @@ body{
         opacity: .7;
     }
 }
+.List-container-main-item-add-confirm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.List-container-main-item-add-confirm-item{
+    width: 500px;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid rgb(210, 210, 210, 0.5);
+}
+.List-container-main-item-add-confirm-item-ques{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.List-container-main-item-add-confirm-item-btn{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.List-container-main-item-add-confirm-item-btn-cancel{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        height: 100%;
+        width: 80%;
+        background: rgb(240, 240, 240);
+        color: rgba(0, 0, 0, 0.3);
+        font-weight: 500;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+} 
+.List-container-main-item-add-confirm-item-btn-add{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        height: 100%;
+        width: 80%;
+        background: linear-gradient(to right, rgb(114, 199, 255, .7), rgb(147, 109, 253, .7));
+        color: white;
+        font-weight: 500;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+}
 .List-container-prev{
     height: 100%;
     display: flex;
