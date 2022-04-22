@@ -639,28 +639,28 @@ function Container(props, ref) {
                     if(props.link == item.type){
                         return(
                             <>
-                            <div className="List-container-main-item" 
-                                key={index}
-                            >
-                                <img src={item.img} />
-                                <div className="List-container-main-item-title">
-                                    <div className="List-container-main-item-price">
-                                        {item.des}
-                                    </div>
-                    
-                                    <div className="List-container-main-item-rating">
-                                        <span>{item.rating}</span> / 5 rating
-                                    </div>
-                    
-                                    <div className="List-container-main-item-choice">
-                                        {item.recommend === true ? 'Recommended' : '' }
-                                    </div>
-                    
-                                    <div className="List-container-main-item-add" onClick={() => contents.handleGet(item.id)}>
-                                        <img src={cart} />
+                                <div className="List-container-main-item" 
+                                    key={index}
+                                >
+                                    <img src={item.img} />
+                                    <div className="List-container-main-item-title">
+                                        <div className="List-container-main-item-price">
+                                            {item.des}
+                                        </div>
+                        
+                                        <div className="List-container-main-item-rating">
+                                            <span>{item.rating}</span> / 5 rating
+                                        </div>
+                        
+                                        <div className="List-container-main-item-choice">
+                                            {item.recommend === true ? 'Recommended' : '' }
+                                        </div>
+                        
+                                        <div className="List-container-main-item-add" onClick={() => contents.handleGet(item.id)}>
+                                            <img src={cart} />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </>
                         )
                     }
