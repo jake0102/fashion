@@ -1,5 +1,5 @@
 // React methods
-import { createContext, useState, useEffect } from 'react'
+import { createContext, useState } from 'react'
 
 // Files
 import P_Home from '../P_Home'
